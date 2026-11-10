@@ -1,6 +1,6 @@
 // 1) Cole aqui os dados do seu projeto (Supabase > Project Settings > API)
-const SUPABASE_URL = 'COLE_AQUI_A_PROJECT_URL';
-const SUPABASE_KEY = 'COLE_AQUI_A_ANON_PUBLIC_KEY';
+const SUPABASE_URL = 'nibbouvcehnbqffbypmu';
+const SUPABASE_KEY = 'sb_publishable_lYIrgCpt3ylKJoO6Ay9Upw_5uQPVIuP';
 
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const $ = s => document.querySelector(s);
