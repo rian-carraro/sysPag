@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gastos do Casal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="login" class="tela hidden">
+  <form id="form-login" class="caixa">
+    <h1>Gastos do Casal</h1>
+    <p class="mudo">Entre com seu e-mail e senha.</p>
+    <label>E-mail <input type="email" id="l-email" required autocomplete="username"></label>
+    <label>Senha <input type="password" id="l-senha" required autocomplete="current-password"></label>
+    <p id="l-erro" class="erro"></p>
+    <button class="btn" type="submit">Entrar</button>
+  </form>
+</section>
+
+<section id="setup" class="tela hidden">
+  <form id="form-setup" class="caixa">
+    <h1>Quem é você?</h1>
+    <p class="mudo">Isso aparece em cada lançamento que você fizer.</p>
+    <label>Seu nome <input id="s-nome" required maxlength="20"></label>
+    <div class="cores">
+      <label class="cor azul"><input type="radio" name="cor" value="azul" checked> Azul</label>
+      <label class="cor rosa"><input type="radio" name="cor" value="rosa"> Rosa</label>
+    </div>
+    <p id="s-erro" class="erro"></p>
+    <button class="btn" type="submit">Continuar</button>
+  </form>
+</section>
+
+<div id="app" class="hidden">
+  <header>
+    <strong>Gastos do Casal</strong>
+    <div class="topo-dir">
+      <input type="month" id="mes" aria-label="Mês">
+      <span id="eu" class="chip"></span>
+      <button class="link" id="sair">Sair</button>
+    </div>
+  </header>
+  <nav>
+    <button data-tab="lanc" class="on">Lançamentos</button>
+    <button data-tab="cats">Categorias e metas</button>
+    <button data-tab="cartoes">Cartões</button>
+  </nav>
+  <main id="conteudo"></main>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
