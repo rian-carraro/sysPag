@@ -69,3 +69,7 @@ main{max-width:900px;margin:0 auto;padding:1rem;display:grid;gap:1rem}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 .neg{color:var(--estouro)}.valor.ent{color:var(--ok)}
 .bolinha.casal{background:var(--casal)}.total.casal{border-left:5px solid var(--casal)}.pill.casal.on{background:var(--casal-bg);color:var(--casal)}
+.parc{background:#FFF1D0;color:#8A5A00;border-radius:6px;padding:0 .4rem;font-weight:600}
+.bolinha.pessoa{background:#8A90A6}.total.pessoa{border-left:5px solid #8A90A6}.pill.pessoa.on{background:#ECEEF4;color:#4A5068}
+.linha select{width:auto;max-width:150px}.cartao-res{margin:0 0 .5rem;font-size:.85rem}
+h3{font-size:.8rem;color:var(--mudo);margin:.9rem 0 .2rem}
